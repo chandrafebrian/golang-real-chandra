@@ -2,8 +2,10 @@ package service
 
 import (
 	"errors"
-	"ticket-app/entity"
-	"ticket-app/repository"
+
+	"github.com/chandrafebrian/golang-real-chandra/repository"
+
+	"github.com/chandrafebrian/golang-real-chandra/entity"
 )
 
 type CatagoryService struct {

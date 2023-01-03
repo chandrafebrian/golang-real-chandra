@@ -2,7 +2,8 @@ package main
 
 import (
 	"fmt"
-	"ticket-app/entity"
+
+	"github.com/chandrafebrian/golang-real-chandra/entity"
 )
 
 func main() {

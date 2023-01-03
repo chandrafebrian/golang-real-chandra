@@ -1,4 +1,5 @@
-module ticket-app
+//
+module github.com/chandrafebrian/golang-real-chandra
 
 go 1.19
 

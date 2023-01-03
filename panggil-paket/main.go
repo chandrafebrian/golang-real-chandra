@@ -1,7 +1,7 @@
 package main
 
 // cara memanggil package dari folder lain dan func
-import "ticket-app/paket"
+import "github.com/chandrafebrian/golang-real-chandra/paket"
 
 func main() {
 	paket.SayHello("mother fucker", "namabelakang")

@@ -1,7 +1,7 @@
 package repository
 
 import (
-	"ticket-app/entity"
+	"github.com/chandrafebrian/golang-real-chandra/entity"
 
 	"github.com/stretchr/testify/mock"
 )

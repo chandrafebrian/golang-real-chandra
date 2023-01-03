@@ -2,7 +2,8 @@ package service
 
 import (
 	"testing"
-	"ticket-app/repository"
+
+	"github.com/chandrafebrian/golang-real-chandra/repository"
 
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/mock"
