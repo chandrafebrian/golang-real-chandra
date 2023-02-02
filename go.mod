@@ -1,9 +1,7 @@
-//
+// go module untuk  membuat libary sendiri menggunakan github
 module github.com/chandrafebrian/golang-real-chandra
 
 go 1.19
-
-// require github.com/ggwhite/go-masker v1.0.9
 
 require (
 	github.com/davecgh/go-spew v1.1.1 // indirect
