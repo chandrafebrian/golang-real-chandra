@@ -43,10 +43,11 @@ func main() {
 	// ini cara lain menggunakan keyword make untuk membuat map
 	// variable person menampung fungsi make dengan parameter (map [key string]value string)
 	person := make(map[string]string)
+	person["alamat"] = "medan"
 	person["name"] = "chandra"
 	person["position"] = "site realibilty engineer"
 
 	for key, value := range person {
-		fmt.Println(key, " = ", value)
+		fmt.Println(key, ":", value)
 	}
 }
