@@ -11,13 +11,24 @@ type Adress struct {
 	city, province, country string
 }
 
-func main() {
+type AlamatBaru struct {
+	jalan, kota string
+}
 
+func main() {
+	//noted : penggunaan nama var dengan * harus sama seperti nam var yg akan di rubah
+	aspal := AlamatBaru{"sm.raja", "medan"}
+	aspalBaru := &aspal
+	*aspalBaru = AlamatBaru{"klender", "jakarta"}
+
+	fmt.Println("dari aspal :", aspalBaru)
+
+	//-------------------------------------------------------
 	address1 := Adress{"bandung", "jabar", "indon"}
 	address2 := &address1
 	// address2.city = "jaktim"
 
-	// keyword bintang * akan memaksa value yg di refer(dituju) menggunakan keyword bintang *address2 = address("update1","up2","up3")
+	// keyword bintang *address2 akan memaksa merubah value yg di refer(dituju) ke variable address2 = address("solo","jateng","wakanda")
 	// penggunaan keyword nya harus sepasang dengan * dan &
 	*address2 = Adress{"solo", "jateng", "indon"}
 
