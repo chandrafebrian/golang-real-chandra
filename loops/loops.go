@@ -32,19 +32,18 @@ func main() {
 		fmt.Println(slicePotongan[i])
 
 	}
-
-	// slice dengan cara yg lebih simple
-	// jika tidak ingin menggunakan var ganti dengan underscore, dan tetap harus ada 2 variable yg di define(jelaskan)
-	for _, value := range slicePotongan {
-		fmt.Println("value ", value)
+	for value := range slicePotongan {
+		fmt.Println(value)
 
 	}
 
 	// ini cara lain menggunakan keyword make untuk membuat map
 	// variable person menampung fungsi make dengan parameter (map [key string]value string)
+	// jika tidak ingin menggunakan var key ganti dengan ( _ ), karena tetap harus ada 2 karakter variable yg di define(jelaskan)
+	// dan hasil nya hanya value yang di tampilkan
 	person := make(map[string]string)
 	person["alamat"] = "medan"
-	person["name"] = "chandra"
+	person["name"] = "joko"
 	person["position"] = "site realibilty engineer"
 
 	for key, value := range person {
