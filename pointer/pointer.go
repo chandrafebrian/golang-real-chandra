@@ -7,6 +7,9 @@ import "fmt"
 // keyword pointer menggunakan operator "&" akan membuat memory baru dengan mengcopy data addrs1 dan merubah value nya sesuai data yg baru untuk addrs2
 // address2.city , merubah nama kota nya dari addres1
 
+// keyword * = sebagai penunjuk arah ke mana akan di rubah
+// keyword & = sebagai wadah tujuan untuk perubahan yang baru
+
 type Adress struct {
 	city, province, country string
 }
@@ -28,9 +31,8 @@ func main() {
 	address2 := &address1
 	// address2.city = "jaktim"
 
-	// keyword bintang *address2 akan memaksa merubah value yg di refer(dituju) ke variable address2 = address("solo","jateng","wakanda")
-	// penggunaan keyword nya harus sepasang dengan * dan &
-	*address2 = Adress{"solo", "jateng", "indon"}
+	// keyword bintang *address2 akan memaksa merubah var value yg di refer(dituju) ke variable address2 menjadi Address("solo","jateng","wakanda") penggunaan keyword nya harus sepasang dengan * dan &
+	*address2 = Adress{"solo", "jateng", "wakanda"}
 
 	fmt.Println("add1 :", address1)
 	fmt.Println("add2 :", address2)
