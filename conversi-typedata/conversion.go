@@ -2,15 +2,16 @@ package main
 
 import "fmt"
 
-// constan adalah tipe data yg tidak bisa di rubah jika sudah di deklarasi
 func main() {
-	const (
-		nama     = "chandra"
-		belakang = "febrian"
-		alamat   = "medan"
-	)
 
-	fmt.Println(nama, belakang, alamat)
+	// ini proses mengkonversi tipe data dari int64 ke int32
+	var nilai32 int32 = 500000000
+	// int64 mengambil nilai dari int32 di konversi
+	var nilai64 int64 = int64(nilai32)
+
+	fmt.Println(nilai32)
+	fmt.Println(nilai64)
+
 }
 
 //noted :
