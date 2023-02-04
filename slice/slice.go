@@ -30,20 +30,19 @@ func main() {
 		"desember",
 	}
 	var slice1 = bulan[4:7]
-	fmt.Println(slice1)
+	fmt.Println(slice1)      //menampilkan nama bulan dari mei -juli
 	fmt.Println(len(slice1)) //len akan mengambil index data dari mei - juli = 3
-	fmt.Println(cap(slice1)) // cap(capacity) akan mengambil index data dari mei - habis = 8
+	fmt.Println(cap(slice1)) // cap(capacity) akan menapilkan jumlah index data dari mei - habis = 8
 
-	var slice2 = bulan[10:] // slice2 memanggil slice mulai dari index 10 sampai akhir dari array bulan
-	fmt.Println(slice2)
+	var slice2 = bulan[10:]
+	fmt.Println(slice2) // slice2 memanggil slice mulai dari index 10 sampai akhir dari array bulan
 
-	var slice3 = append(slice2, "chandra", "febrian") //append untuk membuat slice baru di dalam slice dengan menambah(replace) data di posisi terakhir slice
-	slice3[1] = "kosong"
-	fmt.Println(slice3)
+	var slice3 = append(slice2, "chandra", "febrian")
+	fmt.Println(slice3) //append untuk membuat slice baru di dalam slice dengan menambah(replace) data di posisi terakhir slice
 
 	// $$$$$$
 	// cara lain dengan memanggil fungsi make untuk membuat slice
-	// cara baca membuat slice arrta dengan memanggil fungsi make(paramter arraykosong[]type string. lengt 2, capacity 5,)
+	// cara baca= buat slice array dengan memanggil fungsi make(paramter arraykosong[]typedata string. lengt 10, capacity 15,)
 	newSlice := make([]string, 10, 15) // ini adalah slice , len=10 , cap=15
 	newSlice[0] = "hello"
 	newSlice[1] = "world"
@@ -67,9 +66,9 @@ func main() {
 	copy(copySlice, iniSlice)
 	fmt.Println("copySlice:", copySlice)
 
-	// varkopislice = menampung slice type string dengan len=3 , cap=semua nya dari slice newSlice
+	// varkopislice = menampung slice type string dengan len=3 , cap=semua nya dari newSlice
 	varkopislice := make([]string, 3, cap(newSlice))
-	copy(varkopislice, newSlice)
+	copy(varkopislice, newSlice) //jalankan func copy ke (dst.tujuan varkopislice , dari asalnya newslice)
 	fmt.Println("hasilcopy:", varkopislice)
 
 }
