@@ -19,13 +19,16 @@ func main() {
 		"name":    "chandra",
 		"address": "subang",
 	}
-	// proses dibwah ini untuk menambahkan data ke dalam map person
+	// proses dibwah ini untuk menambahkan data ke dalam map person ,
+	//perhatikan jika key nya sama kembar dengan key person yg lama ,
+	//maka otomatis data key yg lama akan di hapus lalu di timpa replace oleh key yang baru
 	person["title"] = "programmer"
 	person["address"] = "jakarta"
 
 	fmt.Println(person)
-	fmt.Println(person["name"])
+	fmt.Println(person["name"]) //ini proses memanggil map , dengan mengetikan key nya saja ,nanti yang muncul adalah value nya
 	fmt.Println(person["address"])
+	fmt.Println(person["title"])
 
 	// ****
 	//
