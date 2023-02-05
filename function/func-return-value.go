@@ -1,5 +1,7 @@
 package main
 
+// import "fmt"
+
 // // function dengan tipe mengembalikan nilai menggunakan keyword return di ikuti data yg ingin di return
 // // cara baca : func dengan nama var "kembalikanNilai" dan (var key name type string) type kembalian data "string" {return name + "chandra febrian"}
 // // note: untuk memasang key return harus di paling bawah baris func , karena jika ada code lag setelah baris return , maka akan error dan code tidak di esekusi
