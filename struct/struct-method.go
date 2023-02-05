@@ -12,20 +12,13 @@ type Customer struct {
 }
 
 // nama var nya harus sama dengan nama struct methodnya (customer Customer)
-// cara baca: func sayhello() dengan paramater struct methode/function (customer Customer)
+// cara baca: func sayhello(typedata string) dengan paramater struct(Customer)
 func (customer Customer) sayHello(orang string) {
 	fmt.Println("hello", orang, "my name is", customer.Name)
 }
 
-func (a Customer) FungsiHello() {
-	fmt.Println("halo bro ", a.Name)
-}
-
 func main() {
-	chandra := Customer{Name: "chandra-best-sre"}
+	chandra := Customer{Name: "chandra best sre"}
 	chandra.sayHello("bangsat!")
-
-	febrian := Customer{Name: "febrian-devops"}
-	febrian.FungsiHello()
 
 }
