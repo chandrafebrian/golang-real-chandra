@@ -1,6 +1,6 @@
 package folderTesting
 
-func HelloWorld(name string) string {
+// func HelloWorld(name string) string {
 
-	return "halo " + name
-}
+// 	return "halo " + name
+// }
