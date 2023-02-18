@@ -140,6 +140,3 @@ package main
 // continue 		for          import  	return     	var
 
 // contoh testing sum perkalian
-func Sum(x int, y int) int {
-	return x * y
-}
